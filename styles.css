@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+--Dark_cyan: hsl(185, 75%, 39%);
+--Very_dark_desaturated_blue: hsl(229, 23%, 23%);
+--Dark_grayish_blue: hsl(227, 10%, 46%);
+--Dark_gray: hsl(0, 0%, 59%);
+}
+
+html {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+    text-align: center;
+    background-color: var(--Dark_cyan);
+    overflow: hidden;
+}
+
+.pattern_top {
+    position: absolute;
+    top: -500px;
+    left: -150px;
+    z-index: -1;
+    height: 900px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px -10px rgba(0,0,0,0.4);
+}
+
+.card_pattern {
+    border-radius: 15px 15px 0 0;
+}
+
+.img_victor {
+    position: absolute;
+    top: -55px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+}
+
+main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.5rem;
+}
+
+.profile_container {
+    margin-top: 4.25rem;
+}
+
+.bold_text {
+    font-size: 18px;
+    font-weight: 700;
+    list-style-type: none;
+    color: var(--Very_dark_desaturated_blue);
+}
+
+.profile_container .regular_text {
+    font-size: 18px;
+    color: var(--Dark_grayish_blue);
+    margin-left: 0.3rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    font-size: 14px;
+    color: var(--Dark_grayish_blue);
+}
+
+hr {
+    box-sizing: border-box;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.353);
+    margin-block: 0.75rem;
+}
+
+.stats_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 0;
+    margin-top: 0.75rem;
+}
+
+.stats_container .regular_text {
+    display: block;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.75px;
+    margin-top: 0.25rem;
+    color: var(--Dark_grayish_blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(178, 100%, 50%);
+}
+
+.pattern_bottom {
+    position: absolute;
+    bottom: -500px;
+    right: -150px;
+    z-index: -1;
+    height: 900px;
+}
